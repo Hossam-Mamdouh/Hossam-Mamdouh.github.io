@@ -6,11 +6,6 @@ A modern, responsive portfolio website showcasing the work and experience of Hos
 
 Visit the live website: [https://hossam-mamdouh.github.io](https://hossam-mamdouh.github.io)
 
-## 📱 Preview
-
-<img src="website-demo-image/desktop.png" alt="Desktop Preview" width="600">
-
-*Desktop and Mobile responsive design*
 
 ## 🚀 Features
 
@@ -36,16 +31,17 @@ Visit the live website: [https://hossam-mamdouh.github.io](https://hossam-mamdou
 ## 🏗️ Project Structure
 
 ```
-├── index.html              # Main HTML file
+├── .git/                   # Git repository
+├── .github/                # GitHub configuration
 ├── assets/
 │   ├── css/
 │   │   └── style.css       # Main stylesheet
 │   ├── images/             # Images and icons
 │   └── js/
 │       └── script.js       # JavaScript functionality
-├── website-demo-image/     # Preview images
+├── index.html              # Main HTML file
 ├── LICENSE                 # Project license
-└── README.md              # This file
+└── README.md               # This file
 ```
 
 ## 👨‍💻 About Hossam Mamdouh
