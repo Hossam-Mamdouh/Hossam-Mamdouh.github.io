@@ -1,1211 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hossam Mamdouh - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <title>Hossam Mamdouh | Embedded Systems Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio website for Hossam Mamdouh, an Embedded Systems Engineer, IoT developer, and PCB designer based in Egypt."
+  >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
-
 <body>
+  <div class="site-bg"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/my-photo.png" alt="Hossam Mamdouh">
+        <span>Hossam Mamdouh</span>
+      </a>
 
-  <!--
-    - #MAIN
-  -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        Menu
+      </button>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-photo.png" alt="Hossam Mamdouh" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Hossam Mamdouh">Hossam Mamdouh</h1>
-
-          <p class="title">Embedded Systems Engineer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:hossam.mamdouh.amin96@gmail.com" class="contact-link">hossam.mamdouh.amin96@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+201125209515" class="contact-link">+20 1125209515</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1996-03-14">March 14, 1996</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Cairo, Egypt</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/hossam-mamdouh/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.upwork.com/freelancers/~014bb97d4d3ca642b9" class="social-link">
-              <!-- Upwork SVG icon -->
-              <img src="./assets/images/upwork.svg" alt="Upwork" width="24" height="24">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.freelancer.com/u/HossamMamdouh96" class="social-link">
-              <img src="./assets/images/freelancer.svg" alt="freelancer" width="24" height="24">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://khamsat.com/user/hossam_el_sayed" class="social-link">
-              <img src="./assets/images/khamsat.svg" alt="khamsat" width="24" height="24">
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a class="is-active" href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </nav>
+    </header>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm an <strong>Embedded Systems Engineer</strong> with a Bachelor's in Electronics and Communications
-            Engineering. My expertise lies in Embedded Software Engineering and IoT, with a proven track record in:
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Embedded Systems Engineer | IoT Developer | PCB Designer</p>
+          <h2>Embedded products that move from idea to reliable hardware.</h2>
+          <p class="hero-text">
+            Embedded Systems Engineer with a Bachelor degree in Electronics and Communications Engineering, specializing in Embedded Systems Design, Firmware Development, PCB Design, and IoT Systems.
+            I help clients turn concepts into practical devices with clean implementation, clear communication, and production-minded thinking.
           </p>
-          <ul>
-            <li>• <strong>Programming:</strong> C/C++, Embedded C, Assembly</li>
-            <li>• <strong>Microcontrollers:</strong> STM32, AVR, PIC, 8051</li>
-            <li>• <strong>Development Boards:</strong> ESP32, ESP8266, Arduino (Uno, Nano, Mega)</li>
-            <li>• <strong>Microprocessors</strong></li>
-            <li>• <strong>MATLAB</strong></li>
-            <li>• <strong>PCB Design:</strong> Altium Designer, KiCad, EasyEDA</li>
-            <li>• <strong>Circuit Simulation:</strong> Proteus, Tinkercad, Fritzing, Wokwi</li>
-          </ul>
-          <p>
-            <strong>Projects I've completed include:</strong>
-          </p>
-          <ul>
-            <li>• <strong>Dual Axis Solar Tracking System</strong></li>
-            <li>• <strong>IoT-Based ECG Monitoring</strong> </li>
-            <li>• <strong>Smart Parking System</strong></li>
-            <li>• <strong>Driving Cars using Hand Gestures</strong></li>
-            <li>• <strong>Smart City</strong></li>
-            <li>• <strong>Medication Monitoring System</strong></li>
-            <li>• <strong>Water Level Indicator</strong></li>
-            <li>• <strong>Smart Irrigation System</strong></li>
-            <li>• <strong>Intelligent Lighting System</strong></li>
-            <li>• <strong>Automated Garage System</strong></li>
-            <li>• <strong>Solar Panel Cleaner</strong></li>
-            <li>• <strong>Access Control System (PIC18F4520)</strong></li>
-            <li>• <strong>RTC with Temperature and Humidity Sensor (Arduino Nano)</strong></li>
-          </ul>
-          <p>
-            <strong>Additional skills:</strong>
-          </p>
-          <ul>
-            <li>• Electronics</li>
-            <li>• Computer Architecture</li>
-            <li>• Logic Design</li>
-            <li>• Operating Systems</li>
-            <li>• Control Systems</li>
-            <li>• Analog & Digital Communications</li>
-          </ul>
-          <p>
-            I have strong communication, problem-solving, and time-management skills. I'm committed to delivering tasks
-            on time and eager to learn new technologies, making me a valuable asset for any Embedded Systems Engineering
-            role.
-          </p>
-        </section>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm offering</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Embedded_IoT_Development.png" alt="Embedded IoT Development" width="200">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Embedded IoT Development</h4>
-
-                <p class="service-item-text">
-                  Amazing IoT projects using ESP32, ESP8266, and Arduino boards
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Circuit_Design_and_Simulation.png" alt="Circuit Design and Simulation" width="200">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Circuit Design and Simulation</h4>
-
-                <p class="service-item-text">
-                  You will get circuit design and simulation using Proteus or Tinkercad
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Embedded_Systems_Programming.png" alt="Embedded Systems Programming" width="200">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Embedded Systems Programming</h4>
-
-                <p class="service-item-text">
-                  You will get a clean code for your Arduino, AVR, PIC, and 8051 projects.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/PCB_Design.png" alt="PCB Design" width="200">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">PCB Design</h4>
-
-                <p class="service-item-text">
-                  You will get the perfect Printed Circuit Board (PCB) Design for your circuit.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Mark Bennett" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mark Bennett</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Hossam is very knowledgeable, provides excellent communication, and is responsive to requests. I
-                    highly recommend him.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Viv Taback" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Viv Taback</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Hossam was efficient and worked quickly. Once he misunderstood the requirements and once I clarified
-                    with him, he promptly made the necessary changes. I especially liked the video with 3D model he sent
-                    explaining the design in detail.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Ahmed A." width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ahmed A.</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Hossam was efficient, communicative, and worked quickly. He delivered a well-documented Arduino code
-                    that works perfectly as expected. Great experience, I would love to work with him again. Highly
-                    recommended.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Atheer S." width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Atheer S.</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    It was great work with him, he was really helpful.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Mark Bennett" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Mark Bennett</h4>
-
-              <time datetime="2023-06-21">21 June, 2023</time>
-
-              <div data-modal-text>
-                <p>
-                  Hossam is very knowledgeable, provides excellent communication, and is responsive to requests. I
-                  highly recommend him.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+          <div class="hero-actions">
+            <a class="button button-primary" href="portfolio.html">View Projects</a>
+            <a class="button button-secondary" href="services.html">Explore Services</a>
+          </div>
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Alexandria University, Egypt</h4>
-
-              <span>2014 — 2019</span>
-
-              <p class="timeline-text">
-                Bachelor of Engineering (B.Eng.), Electronics and Communications Engineering.<br>
-                <span class="text-secondary">Grade: Good</span>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Embedded Systems Engineer at Geneina</h4>
-
-              <span>2024 — 2026</span>
-
-              <p class="timeline-text">
-                Leading the design, development, and optimization of cutting-edge embedded systems tailored for
-                hydroponic automation.<br>
-                Delivering reliable, scalable, and energy-efficient solutions for commercial, educational, and
-                residential applications.<br>
-                Responsibilities include hardware-software integration, real-time data acquisition, sensor
-                calibration,
-                and implementing control algorithms to ensure optimal system performance and sustainability.<br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Freelancer Embedded Systems Engineer</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                Freelancer Embedded Systems Engineer on Upwork, Freelancer.com, Khamsat.com, Mostaql, Kafil, and
-                PeoplePerHour.<br>
-                I have worked with numerous international companies and individuals from diverse countries
-                worldwide.<br>
-
-                I have developed many Embedded Solutions, such as:-
-              </p>
-              <p class="timeline-text">
-                • <strong>Dual Axis Solar Tracking System</strong><br>
-                • <strong>IoT-Based ECG Monitoring</strong><br>
-                • <strong>Driving Cars Using Hand Gestures</strong><br>
-                • <strong>Medication Monitoring System</strong><br>
-                • <strong>Smart Alarm System" TFT</strong>
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Electronics Maintenance Engineer at GIZA SPINNING AND WEAVING CO SAE
-              </h4>
-
-              <span>2022 — 2023</span>
-
-              <p class="timeline-text">
-                Led troubleshooting and maintenance efforts for various spinning and knitting machines, increasing the
-                operational efficiency.<br>
-                Implemented proactive maintenance schedules, reducing machine downtime.<br>
-                Collaborated with a team of engineers to diagnose and resolve complex technical issues, ensuring
-                minimal
-                production delays.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Embedded Systems</h5>
-                <data value="80">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Microcontrollers Programming</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Printed Circuit Board (PCB) Design</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Electronics</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
+        <aside class="hero-card reveal reveal-delay">
+          <p class="card-label">Summary</p>
+          <ul class="focus-list">
+            <li>Bachelor of Engineering (B.Eng.), Electronics and Communications Engineering</li>
+            <li>Freelance Embedded Systems Engineer 2022 - Present</li>
+            <li>Embedded Systems Engineer at Geneina 2004 - 2026</li>
+            <li>Based in Cairo, Egypt</li>
           </ul>
 
-        </section>
+          <div class="hero-metrics">
+            <article>
+              <span class="metric-value">Microcontrollers</span>
+              <span class="metric-label">AVR, PIC, 8051, STM32, ARM Cortex-M, MSP430, ESP32, Arduino</span>
+            </article>
+            <article>
+              <span class="metric-value">IoT Development</span>
+              <span class="metric-label">Monitoring, Control, Automation</span>
+            </article>
+            <article>
+              <span class="metric-value">PCB Design</span>
+              <span class="metric-label">Altium Designer, KiCad, EasyEDA</span>
+            </article>
+            <article>
+              <span class="metric-value">Circuit Design</span>
+              <span class="metric-label">Proteus, Fritzing, Tinkercad, Wokwi</span>
+            </article>
+          </div>
+        </aside>
+      </section>
 
-      </article>
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>Practical Engineering across Firmware, Electronics, and Embedded Systems.</h2>
+        </div>
 
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Embedded Firmware</h3>
+            <p>
+              Embedded C/C++, assembly, low-level device control, hardware-software integration,
+              debugging, and performance optimization across common microcontroller families.
+            </p>
+          </article>
 
+          <article class="feature-card reveal reveal-delay">
+            <h3>IoT Systems</h3>
+            <p>
+              Sensor acquisition, Wi-Fi connected devices, smart monitoring systems, and control
+              logic for automation, healthcare, environmental, and industrial applications.
+            </p>
+          </article>
 
+          <article class="feature-card reveal reveal-delay-2">
+            <h3>PCB Design</h3>
+            <p>
+              Schematic capture, layout, and board optimization using EasyEDA, Altium Designer,
+              KiCad, Eagle, and a workflow designed for prototype-to-production handoff.
+            </p>
+          </article>
 
+          <article class="feature-card reveal reveal-delay-3">
+            <h3>Circuit Design & Simulation</h3>
+            <p>
+              Circuit design, simulation, and validation using Proteus, Tinkercad, Fritzing, and Wokwi
+              to reduce risk and iterate faster before hardware build or deployment.
+            </p>
+          </article>
+        </div>
+      </section>
 
-      <!--
-        - #PORTFOLIO
-      -->
+      <section class="section split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Selected embedded and PCB projects from recent freelance work.</h2>
+        </div>
 
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>PCB Design Projects</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Embedded Systems Projects</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>PCB Design Projects</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Embedded Systems Projects</button>
-              </li>
-
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="images/ECG_Monitoring_System.png" alt="IoT-Based ECG Monitoring System" class="project-image">
+            <h3>IoT-Based ECG Monitoring System</h3>
+            <p>
+              Built around ESP32 and the AD8232 ECG sensor for real-time signal capture, remote health
+              monitoring scenarios, and future cloud-ready expansion.
+            </p>
+            <ul class="tag-list">
+              <li>ESP32</li>
+              <li>AD8232</li>
+              <li>Embedded C</li>
             </ul>
+          </article>
 
+          <article class="project-card reveal reveal-delay">            
+            <img src="images/Water_Level_Indicator.png" alt="Water Level Monitoring and Control Board" class="project-image">
+            <h3>Water Level Monitoring & Control Board</h3>
+            <p>
+              An ESP32-based control PCB with LCD, alarms, LED indicators, and relay output for
+              monitoring and pump or valve control in real installations.
+            </p>
+            <ul class="tag-list">
+              <li>PCB Design</li>
+              <li>ESP32</li>
+              <li>Control Systems</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <img src="images/Hand_Gesture_Controlled_Car.png" alt="Hand Gesture Controlled Car" class="project-image">
+            <h3>Hand Gesture Controlled Car</h3>
+            <p>
+              A glove-based wireless control system using an accelerometer, Arduino Pro Mini,
+              RF communication, motor driving, and obstacle sensing.
+            </p>
+            <ul class="tag-list">
+              <li>Arduino</li>
+              <li>RF Control</li>
+              <li>Robotics</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Core Tools</p>
+          <h2>The stack I use to design, test, and deliver embedded solutions.</h2>
+        </div>
+
+        <div class="split-grid">
+          <div class="skills-panel reveal">
+            <div class="skill-block">
+              <h3>Microcontrollers & Boards</h3>
+              <p>AVR, PIC, 8051, STM32, ESP32, ESP8266, Arduino Uno, Nano, Mega, and microprocessor-based systems.</p>
+            </div>
+            <div class="skill-block">
+              <h3>Design & Simulation</h3>
+              <p>Proteus, Autodesk Tinkercad, and Fritzing.</p>
+            </div>
+            <div class="skill-block">
+              <h3>Applications</h3>
+              <p>Smart Systems, Greenhouse Control, Medical Monitoring, Automation, Robotics, and Real-Time Embedded Products.</p>
+            </div>
           </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-1.png" alt="ESP32 USB stick with OLED and SD card" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ESP32 USB stick with OLED and SD card</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-2.png" alt="Advanced Audio Controller" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Advanced Audio Controller </h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-3.jpg" alt="Audio Controller" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Audio Controller</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-4.png" alt="Energy Harvesting system" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Energy Harvesting system</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/5V_to_12V_Voltage_Booster.png" alt="5V to 12V Voltage Booster" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">5V to 12V Voltage Booster</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/24VDC_to_5VDC_USB-C.png" alt="24VDC to 5VDC USB-C" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">24VDC to 5VDC USB-C</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/LiPo_Battery_Charger.png" alt="LiPo Battery Charger" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LiPo Battery Charger</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Stepper_Motor_Conveyor_Arm.png" alt="Stepper Motor Conveyor Arm" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Stepper Motor Conveyor Arm</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Terminal_Tedium.png" alt="Terminal Tedium" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Terminal Tedium</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/DS3231_RTC_Module.png" alt="DS3231 RTC Module" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DS3231 RTC Module</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Arduino_Uno_with_ESP-12E.png" alt="Arduino Uno with ESP-12E" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arduino Uno with ESP-12E</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/MicroSD_Audio_Board.png" alt="MicroSD Audio Board" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MicroSD Audio Board</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="PCB Design Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ESP32_Temperature_Controller.png" alt="ESP32 Temperature Controller" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ESP32 Temperature Controller</h3>
-
-                <p class="project-category">PCB Design Projects</p>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-5.png" alt="Medication Monitoring System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Medication Monitoring System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-6.png" alt="Dual Axis Solar Tracking System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dual Axis Solar Tracking System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-7.png" alt="Driving Cars using Hand Gestures" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Driving Cars using Hand Gestures</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-8.png" alt="IoT-Based ECG Monitoring" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">IoT-Based ECG Monitoring</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-9.png" alt="Solar Panel Cleaner" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Solar Panel Cleaner</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Automated_Garage_System.png" alt="Automated Garage System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Automated Garage System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Intelligent_Lighting_System.png" alt="Intelligent Lighting System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Intelligent Lighting System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Smart_Irrigation_System.png" alt="Smart Irrigation System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Smart Irrigation System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/IoT-Based_Bidirectional_Visitors_Counter_System.png" alt="IoT-Based Bidirectional Visitors Counter System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">IoT-Based Bidirectional Visitors Counter System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Embedded Systems Projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project-10.png" alt="Smart Alarm System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Smart Alarm System</h3>
-
-                <p class="project-category">Embedded Systems Projects</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221062.59576309056!2d31.11745095!3d30.0444196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1698666600000!5m2!1sen!2seg"
-              width="400" height="300" loading="lazy" allowfullscreen=""
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+          <div class="stack-panel reveal reveal-delay">
+            <p class="card-label">Why clients hire me</p>
+            <div class="info-list">
+              <div>
+                <strong>Reliable Delivery</strong>
+                <p>Focused on practical, production-ready solutions and clear milestones.</p>
+              </div>
+              <div>
+                <strong>Fast Adaptation</strong>
+                <p>Comfortable moving across Firmware, Electronics, Simulation, and PCB tasks.</p>
+              </div>
+              <div>
+                <strong>Clear Communication</strong>
+                <p>Strong fit for freelance collaboration across Upwork, Freelancer, and direct client projects.</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <section class="section">
+        <div class="cta-panel reveal">
+          <div>
+            <p class="eyebrow">Next Step</p>
+            <h2>Need Firmware, PCB Design, or a Full Embedded System Prototype?</h2>
+            <p>
+              I can help with product ideas, proof-of-concept builds, simulation, and production-ready embedded hardware workflows.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html">Start a Project</a>
+            <a class="button button-secondary" href="https://www.upwork.com/freelancers/~014bb97d4d3ca642b9" target="_blank" rel="noreferrer">Upwork Profile</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <footer class="site-footer">
+      <p>Hossam Mamdouh</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hossam-mamdouh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.upwork.com/freelancers/~014bb97d4d3ca642b9" target="_blank" rel="noreferrer">Upwork</a>
+        <a href="https://www.freelancer.com/u/HossamMamdouh96" target="_blank" rel="noreferrer">Freelancer</a>
+        <a href="https://www.fiverr.com/sellers/hossam_elsayed_/" target="_blank" rel="noreferrer">Fiverr</a>
+        <a href="https://khamsat.com/user/hossam_el_sayed" target="_blank" rel="noreferrer">Khamsat</a>
+        <a href="https://mostaql.com/u/Hossam_Mamdouh1" target="_blank" rel="noreferrer">Mostaql</a>
+        <a href="https://kafiil.com/u/Hossam_Mamdouh" target="_blank" rel="noreferrer">Kafiil</a>
+      </div>
+    </footer>
+  </div>
 
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

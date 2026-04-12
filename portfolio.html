@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Hossam Mamdouh</title>
+  <meta
+    name="description"
+    content="Selected embedded systems, IoT, and PCB projects by Hossam Mamdouh."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="site-bg"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/my-photo.png" alt="Hossam Mamdouh">
+        <span>Hossam Mamdouh</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        Menu
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="is-active" href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero section reveal">
+        <div class="page-hero-card">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Embedded Projects Spanning Healthcare, Automation, Robotics, and Smart Control.</h2>
+          <p class="intro-copy">
+            These examples are based on the public project and profile details available from my freelance profiles.
+            They show the range of systems I build, from PCB-level control boards to connected monitoring devices.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="images/Water_Level_Indicator.png" alt="Water Level Monitoring and Control PCB" class="project-image">
+            <h3>Water Level Monitoring and Control PCB</h3>
+            <p>
+              Designed a custom ESP32-based PCB to monitor water level and control pump or valve behavior,
+              with LCD output, buzzer, LEDs, and relay integration for operational feedback.
+            </p>
+            <ul class="tag-list">
+              <li>ESP32</li>
+              <li>PCB Layout</li>
+              <li>Relay Control</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/ECG_Monitoring_System.png" alt="IoT-Based ECG Monitoring System" class="project-image">
+            <h3>IoT-Based ECG Monitoring System</h3>
+            <p>
+              Developed a Real-time ECG monitoring setup using ESP32 and AD8232 to capture bio-signals and
+              support remote observation and future connected-health workflows.
+            </p>
+            <ul class="tag-list">
+              <li>Medical Electronics</li>
+              <li>Signal Capture</li>
+              <li>IoT</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/Medication_Monitoring_System.png" alt="Medication Monitoring System" class="project-image">
+            <h3>Medication Monitoring System</h3>
+            <p>
+              I designed and implemented a Medication Monitoring System (Smart Pill Box) to help elderly people and patients adhere to their medication schedules reliably and safely.
+              The system includes an Arduino Uno WiFi microcontroller, integrated sensors to detect pill removal, Servo motors for pill dispensing, and a user-friendly interface for real-time monitoring and alerts.
+            </p>
+            <ul class="tag-list">
+              <li>Medical Electronics</li>
+              <li>IoT</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <img src="images/Hand_Gesture_Controlled_Car.png" alt="Hand Gesture Controlled Car" class="project-image">
+            <h3>Hand Gesture Controlled Car</h3>
+            <p>
+              Combined a glove-mounted accelerometer, Arduino Pro Mini, RF communication, L298N motor driving,
+              and ultrasonic sensing to create a gesture-based assistive control vehicle.
+            </p>
+            <ul class="tag-list">
+              <li>Arduino Pro Mini</li>
+              <li>RF Wireless</li>
+              <li>Ultrasonic Sensor</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/Solar_Panel_Cleaner.png" alt="Automated Solar Panel Cleaner System" class="project-image">
+            <h3>Automated Solar Panel Cleaner System</h3>
+            <p>
+              I designed and implemented an Automated Solar Panel Cleaner System to improve solar panel efficiency by removing dust and debris without manual intervention.
+              The system is built using an Arduino Uno, DC motors, and an L298N motor driver, and is controlled remotely using an IR transceiver.
+            </p>
+            <ul class="tag-list">
+              <li>Arduino Uno</li>
+              <li>DC Motors</li>
+              <li>L298N Motor Driver</li>
+              <li>IR Transceiver</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/Smart_Irrigation_System.png" alt="Smart Irrigation System" class="project-image">
+            <h3>Smart Irrigation System</h3>
+            <p>
+              I designed and implemented a Smart Irrigation System that automates watering based on real-time soil moisture levels, reducing water waste and improving irrigation efficiency.
+            </p>
+            <ul class="tag-list">
+              <li>Automation</li>
+              <li>Sensors</li>
+              <li>Control Logic</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <img src="images/Automated_Garage_System.png" alt="Automated Garage System" class="project-image">
+            <h3>Automated Garage System</h3>
+            <p>
+              Built an Automated Garage System that simplifies and automates the process of vehicle parking and retrieval using embedded systems and sensors.
+            </p>
+            <ul class="tag-list">
+              <li>Arduino Mega</li>
+              <li>Automation</li>
+              <li>Embedded Systems</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/MicroSD_Audio_Board.png" alt="MicroSD Audio Board" class="project-image">
+            <h3>MicroSD Audio Board</h3>
+            <p>
+              Designed a MicroSD Audio Board for high-quality audio playback and storage, incorporating efficient PCB layout and audio signal processing.
+            </p>
+            <ul class="tag-list">
+              <li>MicroSD</li>
+              <li>Audio</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/Arduino_Uno_with_ESP-12E.png" alt="Arduino Uno with ESP-12E" class="project-image">
+  
+            <h3>Arduino Uno with ESP-12E</h3>
+            <p>
+              Integrated an ESP-12E WiFi module with an Arduino Uno to enable wireless communication capabilities for various IoT applications.
+            </p>
+            <ul class="tag-list">
+              <li>Arduino Uno</li>
+              <li>ESP-12E</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <img src="images/Stepper_Motor_Conveyor_Arm.png" alt="Stepper Motor Conveyor Arm" class="project-image">
+    
+            <h3>Stepper Motor Conveyor Arm</h3>
+            <p>
+              Designed a conveyor system with a stepper motor-driven arm for precise object handling and sorting, incorporating control logic for efficient operation.
+            </p>
+            <ul class="tag-list">
+              <li>Stepper Motor</li>
+              <li>Conveyor System</li>
+              <li>Automation</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/Terminal_Tedium.png" alt="Terminal Tedium" class="project-image">
+            <h3>Terminal Tedium</h3>
+            <p>
+              Audio mixer and effects board with audio playback, potentiometer controls, and a custom PCB for compact and efficient design.
+            </p>
+            <ul class="tag-list">
+              <li>Audio</li>
+              <li>Effects</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/ESP32_Temperature_Controller.png" alt="ESP32 Temperature Controller" class="project-image">
+            <h3>ESP32 Temperature Controller</h3>
+            <p>
+              Developed an ESP32-based temperature controller for precise climate management, featuring real-time monitoring and automated adjustments.
+            </p>
+            <ul class="tag-list">
+              <li>ESP32</li>
+              <li>Temperature Control</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <img src="images/LiPo_Battery_Charger.png" alt="LiPo Battery Charger" class="project-image">
+            <h3>LiPo Battery Charger</h3>
+            <p>
+              Designed a LiPo battery charger with efficient charging circuitry, safety features, and a custom PCB for compact and reliable operation.
+            </p>
+            <ul class="tag-list">
+              <li>LiPo Battery</li>
+              <li>Charger</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/DS3231_RTC_Module.png" alt="DS3231 RTC Module" class="project-image">
+            <h3>DS3231 RTC Module</h3>
+            <p>
+              Designed a DS3231 RTC module for accurate timekeeping in embedded systems, featuring a custom PCB for reliable performance.
+            </p>
+            <ul class="tag-list">
+              <li>DS3231</li>
+              <li>RTC Module</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <img src="images/5V_to_12V_Voltage_Booster.png" alt="5V to 12V Voltage Booster" class="project-image">
+            <h3>5V to 12V Voltage Booster</h3>
+            <p>
+              Designed a 5V to 12V voltage booster with efficient power conversion, safety features, and a custom PCB for reliable operation.
+            </p>
+            <ul class="tag-list">
+              <li>Voltage Booster</li>
+              <li>Power Conversion</li>
+              <li>PCB Design</li>
+            </ul>
+          </article>
+      </section>
+
+      <section class="section">
+        <div class="cta-panel reveal">
+          <div>
+            <p class="eyebrow">More Work</p>
+            <h2>Want to see platform profiles and external work history?</h2>
+            <p>Browse my public profiles on Freelancer, Upwork, Fiverr, Khamsat, Mostaql, and Kafiil for more context around recent freelance activity.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.freelancer.com/u/HossamMamdouh96" target="_blank" rel="noreferrer">Freelancer</a>
+            <a class="button button-secondary" href="https://www.upwork.com/freelancers/~014bb97d4d3ca642b9" target="_blank" rel="noreferrer">Upwork</a>
+            <a class="button button-secondary" href="https://www.fiverr.com/sellers/hossam_elsayed_/" target="_blank" rel="noreferrer">Fiverr</a>
+            <a class="button button-secondary" href="https://khamsat.com/user/hossam_el_sayed" target="_blank" rel="noreferrer">Khamsat</a>
+            <a class="button button-secondary" href="https://mostaql.com/u/Hossam_Mamdouh1" target="_blank" rel="noreferrer">Mostaql</a>
+            <a class="button button-secondary" href="https://kafiil.com/u/Hossam_Mamdouh" target="_blank" rel="noreferrer">Kafiil</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Hossam Mamdouh</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hossam-mamdouh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.upwork.com/freelancers/~014bb97d4d3ca642b9" target="_blank" rel="noreferrer">Upwork</a>
+        <a href="https://www.freelancer.com/u/HossamMamdouh96" target="_blank" rel="noreferrer">Freelancer</a>
+        <a href="https://www.fiverr.com/sellers/hossam_elsayed_/" target="_blank" rel="noreferrer">Fiverr</a>
+        <a href="https://khamsat.com/user/hossam_el_sayed" target="_blank" rel="noreferrer">Khamsat</a>
+        <a href="https://mostaql.com/u/Hossam_Mamdouh1" target="_blank" rel="noreferrer">Mostaql</a>
+        <a href="https://kafiil.com/u/Hossam_Mamdouh" target="_blank" rel="noreferrer">Kafiil</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
