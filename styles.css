@@ -616,30 +616,6 @@ p {
   grid-template-columns: 1.08fr 0.92fr;
 }
 
-.profile-photo {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  margin-bottom: 1rem;
-}
-
-.profile-photo img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: var(--radius-lg);
-  border: 2px solid var(--line);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  transition: transform 300ms ease, box-shadow 300ms ease;
-}
-
-.profile-photo img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
-}
-
 .skills-panel,
 .stack-panel,
 .contact-panel {
@@ -757,8 +733,10 @@ p {
 
 .page-hero {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
   padding: 4rem 0 0;
+  align-items: center;
 }
 
 .page-hero-card {
@@ -767,6 +745,28 @@ p {
   border-radius: var(--radius-xl);
   background: linear-gradient(180deg, rgba(16, 35, 57, 0.92), rgba(7, 17, 31, 0.92));
   box-shadow: var(--shadow);
+}
+
+.page-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.page-hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--line);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.page-hero-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
 }
 
 .intro-copy {
@@ -982,7 +982,8 @@ p {
   .service-grid,
   .timeline-grid,
   .contact-grid,
-  .cta-panel {
+  .cta-panel,
+  .page-hero {
     grid-template-columns: 1fr;
   }
 
