@@ -740,11 +740,16 @@ p {
 }
 
 .page-hero-card {
-  padding: 2rem;
+  padding: 3rem 4rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   background: linear-gradient(180deg, rgba(16, 35, 57, 0.92), rgba(7, 17, 31, 0.92));
   box-shadow: var(--shadow);
+  grid-column: 1 / -1;
+}
+
+.page-hero-card h2 {
+  max-width: 32ch;
 }
 
 .page-hero-image {
